@@ -1,15 +1,17 @@
-import { createAppContainer } from "react-navigation";
-import { createStackNavigator } from "react-navigation-stack";
-import HomeScreen from "./src/screens/HomeScreen";
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+import HomeScreen from './src/pages/HomeScreen';
+import Details from './src/pages/showdetails/DetailsScreen';
 
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
+    Details: Details,
   },
   {
-    initialRouteName: "Home",
+    initialRouteName: 'Home',
     defaultNavigationOptions: {
-      title: "App",
+      title: 'Business Search',
     },
   }
 );
